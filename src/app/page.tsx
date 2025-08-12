@@ -141,7 +141,7 @@ export default function Home() {
             {/* Generate button */}
             <Button
               onClick={handleGenerateRoadmap}
-              disabled={!goal.trim()} /* #DBEAFE - for the background*/
+              disabled={!goal.trim()}
               className="w-full h-14 text-lg font-semibold font-inter bg-gradient-to-br from-[#5964FC] via-[#9134EA] to-[#faa3d3] hover:from-cool-blue-400 hover:to-cool-teal-400 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-glow-lg disabled:opacity-50 disabled:transform-none rounded-xl"
             >
               <Zap className="mr-2 h-5 w-5" />
