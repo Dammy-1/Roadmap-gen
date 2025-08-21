@@ -1,7 +1,14 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { Inter } from 'next/font/google';
+import AuthProvider from "./providers/AuthProvider";
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,10 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={inter.className}
       >
         <AuthProvider>
-          {children}
+          {children} {/* All pages now have access to SessionProvider */}
         </AuthProvider>
       </body>
     </html>
