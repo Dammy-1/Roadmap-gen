@@ -133,7 +133,7 @@ export default function Index() {
                   <SignInDialog />
                   <button
                     onClick={() => router.push("/sign-up")}
-                    className="bg-gradient-to-r from-[#5964FC] to-[#9134EA] text-white px-6 py-3 rounded-xl"
+                    className="bg-gradient-to-r from-[#5964FC] to-[#9134EA] text-white px-6 py-3 rounded-xl hover:scale-102 transition-transform duration-300"
                   >
                     Get Started
                   </button>
@@ -297,7 +297,7 @@ export default function Index() {
             <Button
               onClick={handleGenerateRoadmap}
               disabled={!goal.trim()}
-              className="w-full h-14 text-lg font-semibold font-inter bg-gradient-to-br from-[#5964FC] to-[#9134EA] hover:from-cool-blue-400 hover:to-cool-teal-400 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-glow-lg disabled:opacity-50 disabled:transform-none rounded-xl"
+              className="w-full h-14 text-lg font-semibold font-inter bg-gradient-to-br from-[#5964FC] to-[#9134EA] hover:from-cool-blue-400 hover:to-cool-teal-400 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-glow-lg disabled:opacity-50 disabled:transform-none rounded-3xl"
             >
               <Zap className="mr-2 h-5 w-5" />
               Generate My Roadmap
